@@ -1,7 +1,7 @@
 ### Installation
 The code is tested under TF1.9.0 GPU version and Python 3.6.8
 
-Some basic operation, like farthest point sampling, are form implementation of PointNet++.
+Some basic operations, like farthest point sampling, are from the implementation of PointNet++.
 
 #### Compile Customized TF Operators
 The TF operators are included under `tf_ops`, you need to compile them (check `tf_xxx_compile.sh` under each ops subfolder) first. Update `nvcc` and `python` path if necessary. The code is tested under TF1.2.0. If you are using earlier version it's possible that you need to remove the `-D_GLIBCXX_USE_CXX11_ABI=0` flag in g++ command in order to compile correctly.
@@ -43,4 +43,4 @@ ShapeNet:
 
 #### S3DIS
 
-S3DIS needs to be pre-processed by partitioning blocks, which is form implementation of Pointcnn. Run the code in `S3DIS`.
+S3DIS needs to be pre-processed by partitioning blocks, which is from the implementation of Pointcnn. Run the code in `S3DIS`.
